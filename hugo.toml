@@ -1,0 +1,63 @@
+baseURL = "https://kake-r.github.io/"
+languageCode = 'en-us'
+title = "Reso"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+
+[markup.goldmark.renderer]
+    unsafe = true # Allow user HTML tags
+
+[params]
+    author = "Reso"
+    avatar = "avatar.jpg"
+    avatarDescription = "avatar icon"
+    favicon = "favicon.ico"
+    description = """
+        25卒 / CTF (Web,Crypto) / Discord : Reso#3184 DM me
+    """
+    publicationYear = "2023"
+    # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    # singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+# Make sure setting a following option for search bar to work
+[outputs]
+    section = ["JSON", "HTML"]
+    term = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "blog"
+    name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "posts/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "twitter"
+    name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/good_bye_twitter"
+    weight = 20
+
+[[menu.main]]
+    identifier = "github"
+    name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/kake-r"
+    weight = 30
+
+[[menu.main]]
+    identifier = "email"
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:kakeren924[at]gmail.com"
+    weight = 40
+
+[[menu.main]]
+    identifier = "amazon"
+    name = "Amazon"
+    pre = "<i class='fab fa-amazon fa-spin'></i>"
+    url = "https://www.amazon.co.jp/hz/wishlist/ls/OSPARI42CNDB"
+    weight = 50
